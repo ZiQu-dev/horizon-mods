@@ -12,9 +12,10 @@ Made for Horizon from the idea of [More Chat History](https://modrinth.com/mod/m
 None of its code is used. This is a native mod: three mixins replace the chat's trimming functions with copies that
 use the new limit.
 
-**Draft:** pinned to Nightly 2026-11-19 (`5ef7734`), the first build with `#[replaceable]` on three chat functions
-(horizon-rust/horizon#18356). It builds and works with a launcher that has horizon-rust/horizon#18789 (open); current
-launchers fail to build it with `unresolved import crate::command` until that fix is released.
+**Draft:** pinned to Nightly 2026-11-20 (`0a875da`). The `#[replaceable]` markers on three chat functions are in
+(horizon-rust/horizon#18356); building needs a launcher with horizon-rust/horizon#18789 (merged, not in a launcher release
+yet). With a launcher built from `main` it builds and works; released launchers fail with
+`unresolved import crate::command`.
 """
 authors = ["ZiQu-dev"]
 owners = ["ZiQu-dev"]
@@ -30,5 +31,5 @@ version = "0.1.0"
 published = "2026-11-19"
 game = "26.3"
 file = "more_chat_history-0.1.0.hmod"
-sha256 = "548f22dc9c5e3d67c9608676595c17b81b729353de979de135f8feb76daf8865"
-changelog = "First version. Pinned to Nightly 2026-11-19 (5ef7734); needs a launcher with horizon-rust/horizon#18789."
+sha256 = "6016c99d846c2852d19bb3cd4be75e4d168bbf556907bd4c20f2c1ac158237b5"
+changelog = "First version. Pinned to Nightly 2026-11-20 (0a875da); needs a launcher with horizon-rust/horizon#18789."
