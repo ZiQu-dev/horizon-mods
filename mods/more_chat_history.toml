@@ -1,12 +1,13 @@
 id = "more_chat_history"
 kind = "native-mod"
-name = "More Chat History"
-summary = "Raises the chat history from vanilla's 100 messages to 16384 and keeps it between sessions."
+name = "Chat Memory and History"
+summary = "Raises the chat history to 16384 messages, keeps it between sessions and keeps 1000 saved commands."
 description = """
 Keeps up to 16384 chat messages instead of vanilla's 100, so you can scroll back through a long session.
 
 - Chat messages, wrapped lines and the up-arrow history of sent messages all keep 16384 entries.
 - The chat is saved to `chat_history.log` in the game folder and shown again next session, under a grey divider. Only the text is kept, not colours or click events.
+- The saved command history (`command_history.txt`) keeps 1000 commands instead of 50.
 - Nothing else about the chat changes: scrolling, search and resizing work as before.
 
 Made for Horizon from the idea of [More Chat History](https://modrinth.com/mod/morechathistory) by JackFredMods (CC0-1.0)
@@ -39,3 +40,11 @@ game = "26.3"
 file = "more_chat_history-0.2.0.hmod"
 sha256 = "1e59971153f4a18097c20bdadee3dcd66c0f757d8e2d7f9ffa77c44d36ddc97a"
 changelog = "Keeps the chat between sessions in chat_history.log, shown under a divider. Pinned to Nightly 2026-11-20 (0a875da); needs launcher 0.2.89 or later."
+
+[[versions]]
+version = "0.2.1"
+published = "2026-11-22"
+game = "26.3"
+file = "more_chat_history-0.2.1.hmod"
+sha256 = "57bc32d507b3dfb77da10973855c412058c64bfaf8ebf1acd4063456d87c0d4f"
+changelog = "Renamed to Chat Memory and History (same id). Keeps 1000 saved commands instead of 50."
